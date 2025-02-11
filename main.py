@@ -13,7 +13,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         text="I'm a bot, please talk to me!")
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token('8010497727:AAENkBDVFTwrU4pf7xmTH_oH2FHCXgNCrAA').build()
+    application = ApplicationBuilder().token(API_KEY).build()
     
     start_handler = CommandHandler('start', start)
     application.add_handler(start_handler)
